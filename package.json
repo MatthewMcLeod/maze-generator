@@ -1,0 +1,16 @@
+{
+  "name": "maze-gen",
+  "version": "1.0.0",
+  "description": "Easy to use Maze Generator that requires no dependencies",
+  "main": "maze_generator.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "maze",
+    "maze",
+    "generator"
+  ],
+  "author": "Matthew McLeod",
+  "license": "MIT"
+}
