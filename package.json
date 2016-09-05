@@ -12,5 +12,9 @@
     "generator"
   ],
   "author": "Matthew McLeod",
-  "license": "MIT"
+  "license": "MIT",
+  "repository" : {
+    "type" : "git",
+    "url" : "https://github.com/MatthewMcLeod/maze-generator"
+  }
 }
