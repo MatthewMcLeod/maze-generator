@@ -31,7 +31,7 @@ var generateMaze = function (MAZE_SIZE_ROWS, MAZE_SIZE_COLS) {
 		}
 	}
 	// seed location to begin recusive backtracing to create path
-	var seed = [Math.floor(MAZE_SIZE_COLS * Math.random()), Math.floor(MAZE_SIZE_ROWS * Math.random())]
+	var seed = [Math.floor(MAZE_SIZE_ROWS * Math.random()), Math.floor(MAZE_SIZE_COLS * Math.random())]
 	generatePath(maze, seed[0], seed[1])
 	removeInternalInfo(maze, ["isVisited"]);
 	return maze;
@@ -95,14 +95,14 @@ var moveToCoordinates = function (row, col, direction) {
 	return moveTo;
 }
 var removeMazeEdges = function (possibleDirections, row, col, maze) {
-	if (col == 0) { 
+	if (col == 0) {
 		removeDirection(possibleDirections, LEFT)
-	} else if (col == (maze.length - 1)) {
+	} else if (col == (maze[0].length - 1)) {
 		removeDirection(possibleDirections, RIGHT)
 	}
 	if (row == 0) {
 		removeDirection(possibleDirections, TOP)
-	} else if (row == (maze[0].length - 1)) {
+	} else if (row == (maze.length - 1)) {
 		removeDirection(possibleDirections, BOTTOM)
 	}
 }

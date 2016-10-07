@@ -1,6 +1,6 @@
 {
   "name": "maze-gen",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Easy to use Maze Generator that requires no dependencies",
   "main": "maze_generator.js",
   "scripts": {

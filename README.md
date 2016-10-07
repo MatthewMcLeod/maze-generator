@@ -21,7 +21,6 @@ The output will be a 2 dimensional array where each cell will be described by a 
 				right: true, // right wall is present
 				bottom: true, // bottom wall is present
 				left: true, // left wall is present
-				isVisited: false // internal value to determine if maze cell has already been visited.
 }
 ```
 Accessing a specific cell is by specifying row, then col.
